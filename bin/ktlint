@@ -1,7 +1,5 @@
 #!/bin/bash
 set -e
 
-./bin/ktlint
-
 printf "current directory is %s\n" "$PWD"
 ktlint --reporter=plain --reporter=checkstyle,output=ktlint-report-in-checkstyle-format.xml
